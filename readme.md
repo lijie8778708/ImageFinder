@@ -1,4 +1,4 @@
-# Web Crawler Challenge
+# Web Crawler for Images
 
 ![badge](unsplash.png)
 
