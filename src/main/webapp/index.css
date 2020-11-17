@@ -1,0 +1,133 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  zoom: 1;
+  background-color: rgb(223, 210, 186);
+}
+
+.search{
+  width: 80%;
+  height: 5rem;
+  margin-top: 50px;
+}
+.search-bar{
+  border: 0;
+  border-bottom: 2px solid #151515;
+  width: 100%;
+  height: 3rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  border-radius: 5px;
+  text-align: left;
+  font-size: x-large;
+  font-weight: 100;
+}
+
+.button{
+   width: 140px;
+   line-height: 38px;
+   text-align: center;
+   font-weight: bold;
+   text-shadow:1px 1px 1px #333;
+   border-radius: 5px;
+   margin:0 20px 20px 0;
+   position: relative;
+   overflow: hidden;
+   background: rgb(234 236 240);
+   font-size: large;
+   border: solid 1px;
+}
+
+.list {
+  list-style: none;
+  margin: 1rem auto;
+  padding: 0;
+  max-width: 60rem;
+  align-items: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 876px) {
+  ul:after {
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+  }
+
+  ul li {
+    margin: 0 0 0 30px;
+    padding: 20px 20px 20px 20px;
+    display: block;
+    width: 50%;
+  }
+}
+
+.gif-item {
+  margin: 0;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gif-item_content {
+    height: 200px;
+    padding-bottom: 2px;
+    border: 1px solid;
+    margin: 1px;
+    /* float: left; */
+    width: 200px;
+    float: left;
+}
+
+.gif-item_image {
+  width: 100%;
+  height: 12.5rem;
+}
+
+.gif-item_image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gif-item_info {
+  padding: 1rem;
+  text-align: center;
+}
+.gif-img{
+	width: 200px;
+	height: 200px;
+	margin: 1px;
+	border: solid 1px;
+}
+@media (min-width: 876px) {
+  .gif-item {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+/* Adjust item si */
+@media (max-width: 876px) {
+  .gif-item_image {
+    height: 20rem;
+  }
+}
+
